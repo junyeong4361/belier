@@ -1,0 +1,95 @@
+/*이건나중에사용
+root {*/
+/*    --fontsize: 0.3rem;*/
+/*    --fontweight: 300;*/
+/*}*/
+
+/*TODO : SINGLE */
+body {
+    margin: 0;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+}
+
+ul, li {
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*TODO : HEADER*/
+
+body > header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+}
+body > header > div.logo{
+    position: absolute;
+    left: 2rem;
+}
+body > header > div > img{
+    cursor: pointer;
+}
+
+body > header > div > img :hover{
+    color: #bdbdbd;
+}
+
+body > header > div.spring {
+    flex: 1;
+}
+
+body > header > div > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body > header > div > ul > li {
+    padding: 2rem 0rem;
+    margin: 0rem 1rem;
+    cursor: pointer;
+}
+
+body > header > div > ul > li:hover {
+    color: #bdbdbd;
+    transition-duration: 200ms;
+}
+
+body > header > div > ul > li > a {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+body > main {
+    background-color: cornsilk;
+    height: 200vh;
+}
+
+/*TODO : FOOTER*/
+
+body > footer {
+    position: sticky;
+    bottom: 0;
+    height: 3rem;
+    background-color: white;
+}
+
+body > footer > div {
+    height: 100%;
+    background-color: teal;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
